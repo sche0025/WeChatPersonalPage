@@ -1,0 +1,5 @@
+/* pages/index3/index3.wxss */
+.hover_class{
+  background-color: aqua;
+  opacity: .5
+}

@@ -1,0 +1,49 @@
+{
+  "pages": [
+  
+    "pages/introduction/index",
+      "pages/splash/index",
+    "pages/achievement/index",
+      "pages/contact/index",
+    "pages/chinese/index",
+    "pages/english/index",
+    "pages/logs/logs",
+    "pages/index3/index3"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "陈思宇的主页 Edward's HomePage",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+
+    "list": [
+      {
+        "pagePath": "pages/introduction/index",
+        "text": "Main",
+        "iconPath": "icons/detail.png",
+          "selectedIconPath": "icons/check-circle.png",
+        "color": "#999999",
+          "selectedColor": "#EB5920",
+          "backgroundColor":"#BFD0E7"
+      },
+      {
+        "pagePath": "pages/achievement/index",
+        "text": "Achievement",
+        "iconPath": "icons/trophy.png",
+            "selectedIconPath": "icons/check-circle.png",
+          "selectedColor": "#EB5920"
+      },
+      {
+        "pagePath": "pages/contact/index",
+        "text": "Contact",
+        "iconPath": "icons/mail.png",
+      "selectedIconPath": "icons/check-circle.png",
+        "selectedColor": "#EB5920"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

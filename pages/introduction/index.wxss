@@ -1,0 +1,7 @@
+/* pages/introduction/index.wxss */
+.center{
+   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,8 @@
+<view>
+<video src='https://www.bilibili.com/dfceb45d-dcf3-4414-b15f-220fc829aab7'
+controls
+></video>
+</view>
+<!-- <view>
+{{a+b}} 
+</view> -->

@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class='title'>陈思宇的主页</view>
+<view class='title'>Edward's Homepage</view>
+<view class="container">
+
+  <view class="userinfo">
+    <text>请选择语言</text>
+    <text> Please Select the Language </text>
+
+    <button class='button' bindtap="chooseChinese"> 中文
+    </button>
+
+    <button class='button' bindtap="chooseEnglish"> English
+    </button>
+
+  </view>
+
+</view>
