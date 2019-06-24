@@ -1,5 +1,4 @@
-// pages/contact/index.js
-var app = getApp();
+// pages/linkedin/index.js
 Page({
 
   /**
@@ -13,19 +12,8 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    this.setData({
 
-      navH: app.globalData.navHeight
-    })
   },
-  navBack: function () {
-    var url = "/pages/splash/index"
-    console.log(url)
-    wx.navigateTo({
-      url
-    })
-  },
-
 
   /**
    * Lifecycle function--Called when page is initially rendered
@@ -33,18 +21,7 @@ Page({
   onReady: function () {
 
   },
-  goLinkedIn:function(){
-    var url = '/pages/linkedin/index'
-    wx.redirectTo({
-      url
-    })
-  },
-  goGithub: function () {
-    var url = '/pages/github/index'
-    wx.navigateTo({
-      url
-    })
-  },
+
   /**
    * Lifecycle function--Called when page show
    */

@@ -1,2 +1,70 @@
-<!--pages/contact/index.wxml-->
-<text>pages/contact/index.wxml</text>
+<!--pages/introduction/index.wxml-->
+<!-- <view class='center'> test</view> -->
+<view>
+  <view class="ripple" style="{{rippleStyle}}"></view>
+
+
+  <view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      联系方式
+      <image src='../../icons/left.png' mode='aspectFit' class='back' bindtap='navBack'></image>
+    </view>
+  </view>
+
+  <view class="myContainer">
+
+    <scroll-view class='bg-gray overflow' style='height:calc(100vh - {{navH}}px)' scroll-y>
+      <view class='hidden'>
+        <!-- 正文 -->
+        <!-- <view class="top">
+    
+        </view> -->
+        <view class='main-content'>
+          <i-panel title="手机">
+            <view> 中国🇨🇳:1518319997 </view>
+            <view> 澳洲🇦🇺:0420847674 </view>
+          </i-panel>
+
+          <i-panel title="代码管理平台">
+            <view> Github
+              <image class='myIcon' src='../../icons/github.png' />:
+              <span class="link" bindtap="goGithub">sche0025</span>
+            </view>
+
+          </i-panel>
+
+          <i-panel title="社交网络">
+            <!-- <view> 领英
+              <image class='myIcon' src='../../icons/linkedin.png' />:
+
+              <span class="link" bindtap="goLinkedIn">Edward Chen</span>
+            </view> -->
+            <view> 微信
+              <image class='myIcon' src='../../icons/wechat.png' />:Edward_Newman
+            </view>
+            <view> QQ
+              <image class='myIcon' src='../../icons/QQ.png' />:394159953
+            </view>
+          </i-panel>
+
+          <i-panel title="邮箱">
+            <!-- <view> 领英
+              <image class='myIcon' src='../../icons/linkedin.png' />:
+
+              <span class="link" bindtap="goLinkedIn">Edward Chen</span>
+            </view> -->
+            <view> QQ邮箱📮:394159953@qq.com
+            </view>
+       
+          </i-panel>
+
+        </view>
+
+
+      </view>
+    </scroll-view>
+
+  </view>
+
+</view>
+<i-toast id="toast" />

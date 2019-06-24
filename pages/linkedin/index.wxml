@@ -1,0 +1,18 @@
+<!--pages/introduction/index.wxml-->
+<!-- <view class='center'> test</view> -->
+
+<view>
+  <view class="ripple" style="{{rippleStyle}}"></view>
+
+
+  <view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      
+      <image src='../../icons/left.png' mode='aspectFit' class='back' bindtap='navBack'></image>
+    </view>
+  </view>
+            <web-view src="https://www.linkedin.com/in/edward-chen-17062a136/">陈思宇的领英</web-view>
+
+
+</view>
+<i-toast id="toast" />

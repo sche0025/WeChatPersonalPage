@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "navbar": "/pages/navbar/index",
+"i-message": "../../dist/message/index"
+  }
 }

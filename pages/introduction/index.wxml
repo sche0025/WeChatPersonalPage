@@ -1,6 +1,110 @@
 <!--pages/introduction/index.wxml-->
 <!-- <view class='center'> test</view> -->
-<i-card title="{{card.name}}" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-    <view slot="content">内容不错</view>
-    <view slot="footer">尾部内容</view>
-</i-card>
+<view>
+  <view class="ripple" style="{{rippleStyle}}"></view>
+
+
+  <view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      {{title}}
+      <image src='../../icons/left.png' mode='aspectFit' class='back' bindtap='navBack'></image>
+    </view>
+  </view>
+  <!--  -->
+  <view class="myContainer" bindtouchstart="containerTap">
+
+    <scroll-view class='bg-gray overflow' style='height:calc(100vh - {{navH}}px)' scroll-y>
+      <view class='hidden'>
+        <!-- 正文 -->
+        <view class="top">
+          <i-card title="  " extra="{{card.name}}" thumb="../../icons/photo.jpg">
+            <view slot="content" class='skill'>
+              <view>年龄：21</view>
+              <view>身高：185cm</view>
+              <view>职业：
+                <span style="text-decoration: line-through overline underline;">
+
+                  码农</span>软件工程师</view>
+
+            </view>
+
+            <view slot="footer">{{card.content}}</view>
+          </i-card>
+        </view>
+        <view class='main-content'>
+          <i-panel title="技能树">
+            <view style="padding: 20rpx;">
+
+              <view class="skill">
+                <view class="text-skill">
+                  Javascript
+                </view>
+                <view class="star">
+                  <i-rate disabled="{{true}}" id="js" value="5" bindtap="handleSkillClicked">
+                  </i-rate>
+                </view>
+              </view>
+
+              <view class="skill">
+                <view class="text-skill">
+                  Python
+                </view>
+                <view class="star">
+                  <i-rate disabled="{{true}}" id="python" value="4" bindtap="handleSkillClicked">
+                  </i-rate>
+                </view>
+              </view>
+
+              <view class="skill">
+                <view class="text-skill">
+                  Java
+                </view>
+                <view class="star">
+                  <i-rate disabled="{{true}}" id="java" value="4" bindtap="handleSkillClicked">
+                  </i-rate>
+                </view>
+              </view>
+
+              <view class="skill">
+                <view class="text-skill">
+                  Haskell
+                </view>
+                <view class="star">
+                  <i-rate disabled="{{true}}" id="haskell" value="3" bindtap="handleSkillClicked">
+                  </i-rate>
+                </view>
+              </view>
+
+
+              <view class="skill">
+                <view class="text-skill">
+                  Prolog
+                </view>
+                <view class="star">
+                  <i-rate disabled="{{true}}" id="prolog" value="1" bindtap="handleSkillClicked">
+                  </i-rate>
+                </view>
+              </view>
+
+            </view>
+          </i-panel>
+          <i-panel title="自我评价">
+            <view style="padding: 20rpx;">
+              <view>始于颜值, 忠于才华。</view>
+              <view></view>
+              <view style='padding-top:20rpx'>🌶️💉💧🐮🍺。</view>
+          
+            </view>
+
+          </i-panel>
+
+        </view>
+
+
+      </view>
+    </scroll-view>
+
+  </view>
+
+</view>
+<i-toast id="toast" />

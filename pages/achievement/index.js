@@ -1,4 +1,5 @@
 // pages/achievement/index.js
+var app = getApp();
 Page({
 
   /**
@@ -12,7 +13,17 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    this.setData({
 
+      navH: app.globalData.navHeight
+    })
+  },
+  navBack: function () {
+    var url = "/pages/splash/index"
+    console.log(url)
+    wx.navigateTo({
+      url
+    })
   },
 
   /**

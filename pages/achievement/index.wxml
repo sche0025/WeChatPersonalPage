@@ -1,2 +1,90 @@
-<!--pages/achievement/index.wxml-->
-<text>pages/achievement/index.wxml</text>
+<!--pages/introduction/index.wxml-->
+<!-- <view class='center'> test</view> -->
+<view>
+  <view class="ripple" style="{{rippleStyle}}"></view>
+
+
+  <view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      相关经历
+      <image src='../../icons/left.png' mode='aspectFit' class='back' bindtap='navBack'></image>
+    </view>
+  </view>
+  <!--  -->
+  <view class="myContainer">
+
+    <scroll-view class='bg-gray overflow' style='height:calc(100vh - {{navH}}px)' scroll-y>
+      <view class='hidden'>
+        <!-- 正文 -->
+        <!-- <view class="top">
+    
+        </view> -->
+        <view class='main-content'>
+          <i-panel title="教育经历 ">
+
+            <i-card title="  " extra="墨尔本大学" thumb="../../images/unimelb.jpg" full="true">
+              <view slot="content" class='skill'>
+                <view>取得时间: 2019年7月26日</view>
+                <view>导师:理查德·辛诺特教授</view>
+
+              </view>
+              <view slot="content" class='skill'>
+                <view>专业:工程硕士(计算机)</view>
+                <view>方向:算法</view>
+
+
+              </view>
+
+              <view slot="footer">{{card.content}}</view>
+            </i-card>
+          </i-panel>
+
+          <i-panel title="工作经历">
+
+            <i-card title="  " extra="墨尔本大学电子研究所" thumb="../../images/unimelb.jpg" full="true">
+              <view slot="content" class='skill'>
+                <view>时间: 2019年3月1日 - 2019年6月28日</view>
+
+              </view>
+              <view slot="content" class='skill'>
+                <view>职位:前端工程师</view>
+
+              </view>
+              <view slot="content" class='skill'>
+                <view>职能:为学校以及政府机构提供IT解决方案</view>
+
+              </view>
+
+              <view slot="footer">{{card.content}}</view>
+            </i-card>
+          </i-panel>
+
+
+          <i-panel title="实习经历">
+
+            <i-card title="  " extra="墨尔本大学电子研究所" thumb="../../images/unimelb.jpg" full="true">
+              <view slot="content" class='skill'>
+                <view>时间: 2018年11月26日 - 2019年2月15日</view>
+
+              </view>
+              <view slot="content" class='skill'>
+                <view>职位:研究助理 & 前端工程师</view>
+              </view>
+              <view slot="content" class='skill'>
+                <view>成就:教授推荐信</view>
+              </view>
+
+              <view slot="footer">{{card.content}}</view>
+            </i-card>
+          </i-panel>
+
+        </view>
+
+
+      </view>
+    </scroll-view>
+
+  </view>
+
+</view>
+<i-toast id="toast" />

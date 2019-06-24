@@ -1,6 +1,7 @@
 // pages/splash/index.js
 var app = getApp();
 var url = "/pages/introduction/index"
+const { $Message } = require('../../dist/base/index');
 Page({
 
   /**
@@ -14,7 +15,9 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    this.setData({
+      navH: app.globalData.navHeight
+    })
   },
 
   /**
@@ -28,6 +31,7 @@ Page({
 
  
     app.globalData.language = "chinese"
+    console.log(app.globalData)
     // wx.showTabBar()
     // wx.setTabBarItem({
     //   index: 0,
@@ -43,13 +47,15 @@ Page({
   },
 
   chooseEnglish(){
-    let url = "/pages/english/index"
-
-    app.globalData = "english"
-    // console.log(app.globalData)
-    wx.switchTab({
-      url
-    })
+    // app.globalData.language = "english"
+    // console.log(app.globalData.language)
+    // wx.switchTab({
+    //   url
+    // })
+    $Message({
+      content: '没翻译成中文，反正没有老外看.',
+      duration: 4
+    });
   },
 
   /**

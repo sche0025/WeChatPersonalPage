@@ -1,0 +1,19 @@
+<!--pages/navbar/index.wxml-->
+<view class="navbar" style='height:{{navH}}px'>
+  <view class="navbar-action-wrap  {{showHome ? 'navbar-action-group' : ''}} row item-center" wx:if="{{showNav}}">
+    <block wx:if="{{showHome}}">
+      <view name="back" color="#333" size="15px" custom-class="navbar-action_item first" bind:click="navBack"></view>
+      <view name="index" color="#333" size="16px" custom-class="navbar-action_item" bind:click="toIndex"></view>
+    </block>
+    <block wx:else>
+      <view name="back" color="#fff" size="18px" custom-class="navbar-action_item first" bind:click="navBack"></view>
+    </block>
+
+  </view>
+  <view class='row title' >
+    <image src="/icons/mail.png" class='my_title_icon' bindtap='goBack'/>  
+
+    <view >  {{pageName}}</view>
+  
+  </view>
+</view>

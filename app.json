@@ -1,8 +1,10 @@
 {
   "pages": [
-  
+        "pages/splash/index",
+              "pages/github/index",
+                "pages/linkedin/index",
     "pages/introduction/index",
-      "pages/splash/index",
+    "pages/navbar/index",
     "pages/achievement/index",
       "pages/contact/index",
     "pages/chinese/index",
@@ -12,6 +14,7 @@
   ],
   "window": {
     "backgroundTextStyle": "dark",
+      "navigationStyle": "custom",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "陈思宇的主页 Edward's HomePage",
     "navigationBarTextStyle": "black",
